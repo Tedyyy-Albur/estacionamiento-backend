@@ -1,0 +1,19 @@
+package com.estacionamiento.api.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class ReporteResidenteDTO {
+
+    private String placa;
+    private Long tiempoAcumuladoMinutos;
+    private BigDecimal montoTotalPagar;
+}
